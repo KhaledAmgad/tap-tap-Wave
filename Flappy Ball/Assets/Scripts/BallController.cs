@@ -31,9 +31,11 @@ public class BallController : MonoBehaviour
         {
             if (!EventSystem.current.IsPointerOverGameObject())
             {
-                GetComponent<Rigidbody>().AddForce(transform.up * 3, ForceMode.Impulse);
+                GetComponent<Rigidbody>().AddForce(transform.up *6, ForceMode.Impulse);
+                GetComponent<Rigidbody>().velocity = new Vector3(speed, 0, 0);
+
             }
-           
+
         }
         if (transform.position.y >= 15)
         {
