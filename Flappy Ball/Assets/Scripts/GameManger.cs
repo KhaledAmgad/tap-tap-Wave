@@ -44,7 +44,6 @@ public class GameManger : MonoBehaviour
         currentScore.text = score.ToString();
         if (score>=scoreToSpeedUP)
         {
-            GameObject.Find("Ball").GetComponent<BallController>().speed += 0.25f;
             RandomColor= new Color(Random.value, Random.value, Random.value, 1.0f);
             gotRandom = true;
             scoreToSpeedUP += 10;
